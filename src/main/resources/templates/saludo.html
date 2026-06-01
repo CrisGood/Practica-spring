@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Saludo</h1>
+    <div class="greeting">
+        <p>¡Hola, <span th:text="${nombre}">Usuario</span>!</p>
+        <p>Bienvenido a nuestra aplicación.</p>
+    </div>
+    <div class="nav-links">
+        <a href="/informacion">Información</a>
+        <a href="/gestionusuarios">Gestión de Usuarios</a>
+    </div>
+</div>
+</body>
+</html>

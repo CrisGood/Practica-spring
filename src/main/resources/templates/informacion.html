@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${titulo}">Información</h1>
+    <div class="info-box">
+        <p th:text="${descripcion}">Descripción de ejemplo.</p>
+    </div>
+    <div class="nav-links">
+        <a href="/saludo">Saludo</a>
+        <a href="/gestionusuarios">Gestión de Usuarios</a>
+    </div>
+</div>
+</body>
+</html>
